@@ -8,8 +8,9 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden font-primary">
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetails />} />
